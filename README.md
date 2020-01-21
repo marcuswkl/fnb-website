@@ -21,55 +21,55 @@ are expected to specify your reference resources by using the Harvard Referencin
 
 **Report Content**
 
-▪ Cover Page
+- Cover Page
 
-▪ Group member contribution form (see Appendix A)
+- Group member contribution form (see Appendix A)
 
-▪ Table of Content
+- Table of Content
 
-▪ Introduction to Website
-- Background
-- Website objectives
+- Introduction to Website
+  - Background
+  - Website objectives
   
-▪ Target Audience
-- Potential web users
-- Web users’ needs and wants
+- Target Audience
+  - Potential web users
+  - Web users’ needs and wants
 
-▪ Website Structure
-- Sketch out for your web structure
-- At least 3 reasons for your choice
+- Website Structure
+  - Sketch out for your web structure
+  - At least 3 reasons for your choice
 
-▪ Page Design
-- Wireframe of all web pages proposed.
-- Include a brief explanation and justify the specification on aspects such as page
-background, colours, images, font size and type, etc
+- Page Design
+  - Wireframe of all web pages proposed.
+  - Include a brief explanation and justify the specification on aspects such as page background, colours, images, font size and type, etc
 
-▪ Conclusion and Future enhancement
+- Conclusion and Future enhancement
 
-▪ References
+- References
 
-▪ Appendices (screenshots of all web pages)
+- Appendices (screenshots of all web pages)
 
-Website
-▪ The website must be coded in HTML5, CSS and JavaScript, using a text editor such as
+**Website**
+
+- The website must be coded in HTML5, CSS and JavaScript, using a text editor such as
 NotePad, TextPad, etc
 
-▪ Creating the website through website builder such as wix.com are NOT allowed.
+- Creating the website through website builder such as wix.com are NOT allowed.
 
-▪ Creating webpages by using a template is NOT allowed.
+- Creating webpages by using a template is NOT allowed.
 
-▪ The web site may range from 8 to 12 pages, depending on the size of your needs.
+- The web site may range from 8 to 12 pages, depending on the size of your needs.
 
-▪ The website MUST include the following features:
+- The website MUST include the following features:
 
-- Hyperlinks
-- Lists
-- Formatting text
-- Colours
-- Image
-- Table
-- iFrame
-- Form
+  - Hyperlinks
+  - Lists
+  - Formatting text
+  - Colours
+  - Image
+  - Table
+  - iFrame
+  - Form
 
 Group members:
 1. Chin Wai Siong
@@ -79,3 +79,4 @@ Group members:
    
 - Category: Steamboat
 - Ideas: Toilet steamboat - slot machine poop, custom cursor poop/toilet bowl
+- Name: Ma Tong Lao Hotpot
