@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background-image: url(/images/index/LandingImage2.jpg);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    cursor: url("/images/index/poopcursor.png"),auto ;
+
+
+}
+
+.body{
+}
+
+#topcontainer{
+    display: block;
+    position: fixed;
+    background-color: rgba(41, 41, 41, 0.3);
+    padding: 20px 10px;
+    width: 100%;
+    top:0;
+    z-index: 50;
+}
+
+#topcontainer #logo {
+    position: absolute;
+    padding: 60px 0px 0px 10px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#topnavbar {
+    transition: 0.4s;
+    overflow: hidden;
+    float: right;
+    margin-right: 20px;
+}
+
+#topnavbar a{
+    float: left;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+    color:  rgb(255, 255, 255);
+    border-radius: 40px;
+    text-shadow: rgba(150, 150, 150, 80%) 1.5px 1.5px;
+
+}
+#topnavbar a:hover{
+    background-color: rgba(206, 206, 206, 50%);
+    color:  rgb(255, 255, 255);
+}
+
+#topnavbar a:active{
+    background-color: rgba(150, 150, 150, 50%);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.headerBG{
+    position: absolute;
+    display: block;
+    width: 700px;
+    height: 360px;
+    left: 30px;
+    top: 400px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,80%), rgba(0,0,0,0%) );
+    border-radius: 50px;
+}
+
+#header1{
+    position: absolute;
+    margin-left: 20px; 
+    top: -60px;
+    color: rgb(255, 255, 255);
+    font-family: 'ZCOOL XiaoWei', Arial ;
+    font-size: 120px;
+    transition: transform ease-in 0.4s;
+    transform: translate(0px,0px);
+}
+
+#header2{
+    position: absolute;
+    margin-left: 20px; 
+    top: 75px;
+    color: rgb(255, 255, 255);
+    font-family: 'Tomorrow';
+    font-size: 80px;
+    transition: transform ease-in 0.4s;
+    transform: translate(0px,0px);
+}
