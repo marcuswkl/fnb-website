@@ -1,3 +1,4 @@
+/*Body*/
 body {
     margin: 0;
     background-image: url(/images/index/LandingImage2.jpg);  
@@ -7,6 +8,8 @@ body {
     cursor: url("/images/index/poopcursor.png"),auto ;
 }
 
+
+/*Nav Bar*/
 #topcontainer{
     display: block;
     position: fixed;
@@ -14,26 +17,26 @@ body {
     padding: 20px 10px;
     width: 100%;
     top:0;
-    z-index: 50;
+    z-index: 5;
 }
 
 #topcontainer #logo {
     position: absolute;
-    padding: 60px 0px 0px 10px;
-    font-size: 35px;
-    font-weight: bold;
+    padding-top: 70px;
+    max-width: 300px;
     transition: 0.4s;
 }
 
 
 #topnavbar {
     transition: 0.4s;
+    padding: 70px 10px;
     overflow: hidden;
     float: right;
     margin-right: 20px;
 }
 
-#topnavbar a{
+#topnavbar a {
     float: left;
     text-align: center;
     padding: 30px 30px;
@@ -43,7 +46,7 @@ body {
     color:  rgb(255, 255, 255);
     border-radius: 40px;
     text-shadow: rgba(150, 150, 150, 80%) 1.5px 1.5px;
-
+    cursor: url("/images/index/poopcursor.png"),auto ;
 }
 #topnavbar a:hover{
     background-color: rgba(206, 206, 206, 50%);
@@ -53,11 +56,63 @@ body {
 #topnavbar a:active{
     background-color: rgba(150, 150, 150, 50%);
     color: rgb(255, 255, 255);
-    text-decoration: underline;
 }
 
+/*Form*/
+#form_div {   
+    display: none; 
+    position: fixed;
+    z-index: 100; 
+    padding-top: 140px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+}
+
+#form_joinUs h3 {
+    text-decoration: underline;
+    font-family: 'Tomorrow', 'Roboto';
+    font-size: 28px;
+}
+
+#form_joinUs {
+    background-color: rgba(32, 32, 32, 0.60);
+    margin: 0% 25% 0% 25%;
+    padding: 20px;
+    width: 50%;
+    color: white;
+    border-radius: 50px;
+    
+}
+
+#form_joinUs #submit {
+    background-color: rgb(164, 248, 115);
+    padding: 18px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+#back{
+    color: rgb(190, 190, 190);
+    float: right;
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#back:hover, #back:focus {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Header*/
 .headerBG{
-    position: absolute;
+    position: relative;
     display: block;
     width: 700px;
     height: 360px;
@@ -68,9 +123,8 @@ body {
 }
 
 #header1{
-    position: absolute;
+    position: relative;
     margin-left: 20px; 
-    top: -60px;
     color: rgb(255, 255, 255);
     font-family: 'ZCOOL XiaoWei', Arial ;
     font-size: 120px;
@@ -79,12 +133,88 @@ body {
 }
 
 #header2{
-    position: absolute;
+    position: relative;
     margin-left: 20px; 
-    top: 75px;
+    top: -75px;
     color: rgb(255, 255, 255);
-    font-family: 'Tomorrow';
+    font-family: 'Tomorrow', 'Roboto';
     font-size: 80px;
     transition: transform ease-in 0.4s;
     transform: translate(0px,0px);
 }
+
+/*Slideshow*/
+.slideshow {
+    position: relative;
+    margin-top: 572px;
+}
+
+.gallery {
+    display: none;
+    height: 800px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 5px 5px 0;
+  -webkit-user-select: none;
+  z-index: 3;
+}
+
+.next{
+    right: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(163, 163, 163, 0.8);
+}
+
+.counter {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 10px 15px;
+    position: absolute;
+    background-color: rgba(46, 46, 46, 0.8);
+    border-radius: 30px;
+    top: 80px;
+    left: 20px;
+    z-index: 3;
+  }
+  
+  .caption_div{
+      text-align: center;
+      background-color: #222;
+      padding: 40px 50px 20px 50px;
+      color: white;
+      z-index: 3;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    float: left;
+    width: 20%;
+  }
+
+  .peek {
+      opacity: 0.6;
+      z-index: 3;
+  }
+
+  .active, .peek:hover{
+      opacity: 1;
+  }
