@@ -26,6 +26,8 @@ function popUpForm()
     //Back button
     var back = document.getElementById("back");
     //When user clicks link, open form
+    form.style.display = "block";
+    //When user clicks link AGAIN, open form again
     button.onclick = function()
     {
         form.style.display = "block";
