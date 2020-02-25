@@ -3,36 +3,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>MTL</title>
     <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
     <link href="/css/index.css" rel="stylesheet">
-    <script src="js/index.js"></script> 
+    <script src="/js/index.js"></script> 
 </head>
-
-<body>
-    <header>
-        <!--The div > (logo + Navbar) > links -->
-        <div id="topcontainer"> 
-            <img id="logo" src="/images/index/MTL Logo.PNG" alt="logo">
-            <nav id="topnavbar">
-                <a href="#about_us">About Us</a>
-                <a href="#menu">Menu</a>
-                <a href="#reservations">Reservations</a>
-                <a id="joinUs" onclick="popUpForm()">Join Us</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <!--The div > (tagline + subheader)-->
-    <div class="headerBG">
-        <h1 id="header1">马桶捞</h1>
-        <h2 id="header2">The facade<br>of real hotpot</h2>
+    
+<body onload="showSlides(slideNum)">
+    <!--The div > (logo + Navbar) > links -->
+    <div class="topcontainer"> 
+        <img id="logo" src="/images/index/MTL Logo.PNG" alt="logo">
+        <nav id="topnavbar">
+            <a href="#about_us">About Us</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservations">Reservations</a>
+            <a id="joinUs" onclick="popUpForm()">Join Us</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
-
-    <!--The div > (join us form)-->
+    
     <div id="form_div">
         <form id="form_joinUs">
             <span id="back">&KHcy;</span>
@@ -58,34 +50,40 @@
             <input id="submit" type="submit" value="Submit">
         </form>
     </div>
+
+    <!--The div > (tagline + subheader)-->
+    <div class="headerBG">
+        <h1 id="header1">马桶捞</h1>
+        <h2 id="header2">The facade<br>of real hotpot</h2>
+    </div>
     
-<!--The div > (slideshow gallery)-->
+    <!--The div > (slideshow gallery)-->
     <div class="slideshow">
 
         <!-- Full-width images with number text -->
         <div class="gallery">
-        <div class="counter">1 / 6</div>
-            <img src="/images/index/ImageGallery/Slide1.jpg" width="100%" onclick="currentSlide(1)" alt="Slide 1">
+        <div class="counter">1 / 5</div>
+            <img src="/images/index/ImageGallery/Slide1.jpg" width="100%"">
         </div>
     
         <div class="gallery">
-        <div class="counter">2 / 6</div>
-            <img src="/images/index/ImageGallery/Slide2.jpg" width="100%" onclick="currentSlide(2)" alt="Slide 2">
+        <div class="counter">2 / 5</div>
+            <img src="/images/index/ImageGallery/Slide2.jpg" width="100%"">
         </div>
     
         <div class="gallery">
-        <div class="counter">3 / 6</div>
-            <img src="/images/index/ImageGallery/Slide3.jpg" width="100%" onclick="currentSlide(3)" alt="Slide 3">
+        <div class="counter">3 / 5</div>
+            <img src="/images/index/ImageGallery/Slide3.jpg" width="100%">
         </div>
     
         <div class="gallery">
-        <div class="counter">4 / 6</div>
-            <img src="/images/index/ImageGallery/Slide4.jpg" width="100%" onclick="currentSlide(4)" alt="Slide 4">
+        <div class="counter">4 / 5</div>
+            <img src="/images/index/ImageGallery/Slide4.jpg" width="100%">
         </div>
     
         <div class="gallery">
-        <div class="counter">5 / 6</div>
-            <img src="/images/index/ImageGallery/Slide5.jpg" width="100%" onclick="currentSlide(5)" alt="Slide 5">
+        <div class="counter">5 / 5</div>
+            <img src="/images/index/ImageGallery/Slide5.jpg" width="100%">
         </div>
 
         <!-- Next and previous buttons -->
@@ -100,19 +98,19 @@
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide1.jpg" style="width:100%" onclick="currentSlide(1)">
+                <img class="peek active" src="/images/index/ImageGallery/Slide1.jpg" style="width:100%" onclick="currentSlide(1)" alt="What you expect to see in MTL">
             </div>
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide2.jpg" style="width:100%" onclick="currentSlide(2)">
+                <img class="peek" src="/images/index/ImageGallery/Slide2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Appetizing food awaits you">
             </div>
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide3.jpg" style="width:100%" onclick="currentSlide(3)">
+                <img class="peek" src="/images/index/ImageGallery/Slide3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Isn't that cute?">
             </div>
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide4.jpg" style="width:100%" onclick="currentSlide(4)">
+                <img class="peek" src="/images/index/ImageGallery/Slide4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Explore the flavours of your excrements!">
             </div>
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide5.jpg" style="width:100%" onclick="currentSlide(5)">
+                <img class="peek" src="/images/index/ImageGallery/Slide5.jpg" style="width:100%" onclick="currentSlide(5)" alt="What you actually see in MTL">
             </div>
         </div>
     </div> 

@@ -1,6 +1,5 @@
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {navBar(), taglineAnim()};
-
+window.onscroll = function() {taglineAnim(); navBar()};
 
 function navBar() {
     //For nav bar
@@ -13,6 +12,36 @@ function navBar() {
     {
         document.getElementById("topnavbar").style.padding = "70px 10px";
         document.getElementById("logo").style.padding = "70px";
+    }
+}
+
+
+function popUpForm()
+{   
+    //For pop-up form (join us)
+    //Form
+    var form = document.getElementById("form_div");
+    //Link that opens the form 
+    var button = document.getElementById("joinUs");
+    //Back button
+    var back = document.getElementById("back");
+    //When user clicks link, open form
+    button.onclick = function()
+    {
+        form.style.display = "block";
+    }
+    //When user clicks back, close form
+    back.onclick = function()
+    {
+        form.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the form, close it
+    window.onclick = function(event) 
+    {
+        if (event.target == form) 
+        {
+            form.style.display = "none";
+        }
     }
 }
 
@@ -31,72 +60,44 @@ function taglineAnim()
     }
 }
 
-function popUpForm()
-{
-    //For pop-up form (join us)
-    //Form
-    var form = document.getElementById("form_div");
-    //Link that opens the form 
-    var joinUs = document.getElementById("joinUs");
-    //Back button
-    var back = document.getElementById("back");
-
-    //When user clicks link, open form
-    joinUs.onclick = function()
-    {
-        form.style.display = "block";
-    }
-    //When user clicks back, close form
-    back.onclick = function()
-    {
-        form.style.display = "none";
-    }
-    // When the user clicks anywhere outside of the form, close it
-    window.onclick = function(event) 
-    {
-        if (event.target == form) 
-        {
-            modal.style.display = "none";
-        }
-    }
-}
-
 //For slideshow gallery
 var slideNum = 1;
-showSlides(slideNum);
 
 //Next/Prev
-function plusSlides(n){
+function plusSlides(n)
+{
     showSlides(slideNum += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
+function currentSlide(n) 
+{
     showSlides(slideNum = n);
-  }
+}
 
-function showSlides(n) {
+function showSlides(n) 
+{
     var i;
     var slides = document.getElementsByClassName("gallery");
     var thumbnail = document.getElementsByClassName("peek");
-    var captionText = document.getElementById("caption");
     if (n > slides.length) 
     {
-        slideNum = 1
+        slideNum = 1;
     }
     if (n < 1) 
     {
-        slideNum = slides.length
+        slideNum = slides.length;
     }
     for (i = 0; i < slides.length; i++) 
     {
-      slides[i].style.display = "none";
+        slides[i].style.display = "none";
     }
     for (i = 0; i < thumbnail.length; i++) 
     {
         thumbnail[i].className = thumbnail[i].className.replace(" active", "");
     }
+     
     slides[slideNum-1].style.display = "block";
     thumbnail[slideNum-1].className += " active";
-    captionText.innerHTML = thumbnail[slideNum-1].alt;
+    document.getElementById("caption").innerHTML = thumbnail[slideNum-1].alt;
 } 

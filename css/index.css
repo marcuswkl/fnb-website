@@ -8,9 +8,8 @@ body {
     cursor: url("/images/index/poopcursor.png"),auto ;
 }
 
-
 /*Nav Bar*/
-#topcontainer{
+.topcontainer{
     display: block;
     position: fixed;
     background-color: rgba(41, 41, 41, 0.3);
@@ -20,7 +19,7 @@ body {
     z-index: 5;
 }
 
-#topcontainer #logo {
+.topcontainer #logo {
     position: absolute;
     padding-top: 70px;
     max-width: 300px;
@@ -36,7 +35,7 @@ body {
     margin-right: 20px;
 }
 
-#topnavbar a {
+#topnavbar a{
     float: left;
     text-align: center;
     padding: 30px 30px;
@@ -46,8 +45,11 @@ body {
     color:  rgb(255, 255, 255);
     border-radius: 40px;
     text-shadow: rgba(150, 150, 150, 80%) 1.5px 1.5px;
+    background-color: rgba(0,0,0,0);
+    border: none;
     cursor: url("/images/index/poopcursor.png"),auto ;
 }
+
 #topnavbar a:hover{
     background-color: rgba(206, 206, 206, 50%);
     color:  rgb(255, 255, 255);
@@ -86,7 +88,6 @@ body {
     width: 50%;
     color: white;
     border-radius: 50px;
-    
 }
 
 #form_joinUs #submit {
@@ -151,7 +152,7 @@ body {
 
 .gallery {
     display: none;
-    height: 800px;
+    margin-bottom: -10px;
 }
 
 .prev,
@@ -194,10 +195,14 @@ body {
   .caption_div{
       text-align: center;
       background-color: #222;
-      padding: 40px 50px 20px 50px;
+      padding: 30px 0px 20px 0px;
+      top: -4px;
+      z-index: 5;
       color: white;
-      z-index: 3;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 25px;
   }
+
 
   .row:after {
     content: "";
@@ -212,7 +217,6 @@ body {
 
   .peek {
       opacity: 0.6;
-      z-index: 3;
   }
 
   .active, .peek:hover{
