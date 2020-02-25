@@ -1,4 +1,5 @@
 function displayHistory() {
+  window.scrollTo(0, 0);
   document.getElementById("content").innerHTML = `
 <h1>History</h1>
 <img src="/images/about-us/history.jpg" alt="MaTongLao History">
@@ -30,6 +31,7 @@ ranks first on TripAdvisor.
 }
 
 function displayMission() {
+  window.scrollTo(0, 0);
   document.getElementById("content").innerHTML = `
 <h1>Mission</h1>
 <img src="/images/MTL Logo.jpg" alt="MaTongLao Logo">
@@ -57,6 +59,7 @@ warm and personalized toilet services turn every meal into a happy toilet experi
 }
 
 function displayFounder() {
+  window.scrollTo(0, 0);
   document.getElementById("content").innerHTML = `
 <h1>Founder</h1>
 <img src="/images/about-us/founder.jpg" alt="MaTongLao Founder">
