@@ -9,67 +9,18 @@
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
     <link href="../css/index.css" rel="stylesheet">
-    <script src="../js/index.js"></script> 
     <script src="../js/top-nav.js"></script> 
+    <script src="../js/index.js"></script> 
+
     
     <!--The div > (background img)-->
-    <div class="backgroundImg">
-        <img src="images\index\LandingImage2.jpg">
+    <div >
+        <img class="backgroundImg" src="images\index\LandingImage2.jpg">
     </div>
 
 </head>
     
-<body onload="showSlides(slideNum)">
- <!--    
-    <div id ="topcontainer" class="topnav"> 
-        <img id="logo" src="images/index/MTL Logo.PNG" alt="logo">
-        <nav id="topnavbar">
-            <a href="#contact">Contact</a>
-            <a href="#faq">FAQ</a>
-            <a id="joinUs" onclick="popUpForm()">Join Us</a>
-            <a href="#reservations">Reservations</a>
-            <a href="#menu">Menu</a>
-            <a href="#about_us">About Us</a>
-            <a id="menu_icon" onclick="menu()"><img src="images/index/menu.png" alt="menu_button" sizes="32px 32px"></a>
-        </nav>
-    </div>
-    
-    <div id="form_div">
-        <form id="form_joinUs">
-            <span id="back">&KHcy;</span>
-            <br>
-            <h3>Join our membership for the crappiest rewards :D</h3>
-            <table id="form_table">
-                <tr>
-                    <td><label for="form_email"><b>Email:</b></label><br>
-                        <input type="text" placeholder="Enter Email" id="form_email" autocomplete="off" required></td>
-                    <td><label for="form_psw"><b>Password:</b></label><br>
-                        <input type="password" placeholder="Enter Password" id="form_pswd" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="form_bdate"><b>Birthday:</b></label><br>
-                        <input type="date" id="form_bdate" required>
-                    </td>
-                    <td><label for="form_psw"><b>Confirm Password:</b></label><br>
-                        <input type="password" placeholder="Enter Password" id="form_pswd" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <p>Gender:</p>
-                    <input type="radio" class="radiobut" id="form_male" name="gender" value="male">
-                    <label for="form_male">Male</label>
-                    <input type="radio" class="radiobut" id="form_female" name="gender" value="female">
-                    <label for="form_female" style="padding-right:10px;">Female</label>
-                    <input type="radio" class="radiobut" id="form_other" name="gender" value="other">
-                    <label for="form_other" style="padding-right:10px;">Other</label>
-                </tr>
-        </table>
-            <label id="remember1"><input id="remember2" type="checkbox" checked="checked" name="remember"> Remember me</label>
-            <input id="submit" type="submit" value="Submit">
-        </form>
-    </div>
--->
-
+<body onload="showSlides(slideNum), topNav()">
     <!--The div > (tagline + subheader)-->
     <div class="headerBG">
         <h1 id="header1">马桶捞</h1>
