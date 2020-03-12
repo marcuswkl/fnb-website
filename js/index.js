@@ -1,20 +1,34 @@
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+/*// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {taglineAnim(); navBar()};
 
 function navBar() {
     //For nav bar
     if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110)
     {
-        document.getElementById("topnavbar").style.padding = "0px 10px";
-        document.getElementById("logo").style.padding = "0px";
+        document.getElementById("topcontainer").style.height = "130px";
+        document.getElementById("topnavbar").style.padding = "15px 10px";
+        document.getElementById("logo").style.padding = "10px";
     } 
     else 
     {
-        document.getElementById("topnavbar").style.padding = "70px 10px";
-        document.getElementById("logo").style.padding = "70px";
+        document.getElementById("topcontainer").style.height = "200px";
+        document.getElementById("topnavbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.padding = "30px";
     }
 }
 
+//For mobility menu bar
+function menu(){
+    var top = document.getElementById("topcontainer");
+    if (top.className === "topnav")
+    {
+        top.className += " responsive";
+    } 
+    else 
+    {
+        top.className = "topnav";
+    }
+}
 
 function popUpForm()
 {   
@@ -46,7 +60,7 @@ function popUpForm()
         }
     }
 }
-
+*/
 function taglineAnim()
 {
     //For Tagline anim
@@ -103,3 +117,4 @@ function showSlides(n)
     thumbnail[slideNum-1].className += " active";
     document.getElementById("caption").innerHTML = thumbnail[slideNum-1].alt;
 } 
+

@@ -3,25 +3,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MTL</title>
     <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
-    <link href="/css/index.css" rel="stylesheet">
-    <script src="/js/index.js"></script> 
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/index.js"></script> 
+    <script src="../js/top-nav.js"></script> 
+
+
+    
+    <!--The div > (background img)-->
+    <div class="backgroundImg">
+        <img src="images\index\LandingImage2.jpg">
+    </div>
+
 </head>
     
 <body onload="showSlides(slideNum)">
-    <!--The div > (logo + Navbar) > links -->
-    <div class="topcontainer"> 
-        <img id="logo" src="/images/index/MTL Logo.PNG" alt="logo">
+ <!--    
+    <div id ="topcontainer" class="topnav"> 
+        <img id="logo" src="images/index/MTL Logo.PNG" alt="logo">
         <nav id="topnavbar">
-            <a href="#about_us">About Us</a>
-            <a href="#menu">Menu</a>
-            <a href="#reservations">Reservations</a>
-            <a id="joinUs" onclick="popUpForm()">Join Us</a>
-            <a href="#faq">FAQ</a>
             <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+            <a id="joinUs" onclick="popUpForm()">Join Us</a>
+            <a href="#reservations">Reservations</a>
+            <a href="#menu">Menu</a>
+            <a href="#about_us">About Us</a>
+            <a id="menu_icon" onclick="menu()"><img src="images/index/menu.png" alt="menu_button" sizes="32px 32px"></a>
         </nav>
     </div>
     
@@ -30,26 +41,36 @@
             <span id="back">&KHcy;</span>
             <br>
             <h3>Join our membership for the crappiest rewards :D</h3>
-            <label for="form_email"><b>Email:</b></label>
-            <input type="text" placeholder="Enter Email" id="form_email" autocomplete="off" required>
-            <br>
-            <label for="form_psw"><b>Password:</b></label>
-            <input type="password" placeholder="Enter Password" id="form_pswd" autocomplete="off" required>
-            <br>
-            <label for="form_bdate"><b>Birthday:</b></label>
-            <input type="date" id="form_bdate" required>
-            <br>
-            <p>Gender:</p>
-            <input type="radio" id="form_male" name="gender" value="male">
-            <label for="form_male">Male</label><br>
-            <input type="radio" id="form_female" name="gender" value="female">
-            <label for="form_female">Female</label><br>
-            <input type="radio" id="form_other" name="gender" value="other">
-            <label for="form_other">Other</label>
-            <br><br><br>
+            <table id="form_table">
+                <tr>
+                    <td><label for="form_email"><b>Email:</b></label><br>
+                        <input type="text" placeholder="Enter Email" id="form_email" autocomplete="off" required></td>
+                    <td><label for="form_psw"><b>Password:</b></label><br>
+                        <input type="password" placeholder="Enter Password" id="form_pswd" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="form_bdate"><b>Birthday:</b></label><br>
+                        <input type="date" id="form_bdate" required>
+                    </td>
+                    <td><label for="form_psw"><b>Confirm Password:</b></label><br>
+                        <input type="password" placeholder="Enter Password" id="form_pswd" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <p>Gender:</p>
+                    <input type="radio" class="radiobut" id="form_male" name="gender" value="male">
+                    <label for="form_male">Male</label>
+                    <input type="radio" class="radiobut" id="form_female" name="gender" value="female">
+                    <label for="form_female" style="padding-right:10px;">Female</label>
+                    <input type="radio" class="radiobut" id="form_other" name="gender" value="other">
+                    <label for="form_other" style="padding-right:10px;">Other</label>
+                </tr>
+        </table>
+            <label id="remember1"><input id="remember2" type="checkbox" checked="checked" name="remember"> Remember me</label>
             <input id="submit" type="submit" value="Submit">
         </form>
     </div>
+-->
 
     <!--The div > (tagline + subheader)-->
     <div class="headerBG">
@@ -59,31 +80,30 @@
     
     <!--The div > (slideshow gallery)-->
     <div class="slideshow">
-
         <!-- Full-width images with number text -->
         <div class="gallery">
         <div class="counter">1 / 5</div>
-            <img src="/images/index/ImageGallery/Slide1.jpg" width="100%"">
+            <img src="images/index/ImageGallery/Slide1.jpg" width="100%"">
         </div>
     
         <div class="gallery">
         <div class="counter">2 / 5</div>
-            <img src="/images/index/ImageGallery/Slide2.jpg" width="100%"">
+            <img src="images/index/ImageGallery/Slide2.jpg" width="100%"">
         </div>
     
         <div class="gallery">
         <div class="counter">3 / 5</div>
-            <img src="/images/index/ImageGallery/Slide3.jpg" width="100%">
+            <img src="images/index/ImageGallery/Slide3.jpg" width="100%">
         </div>
     
         <div class="gallery">
         <div class="counter">4 / 5</div>
-            <img src="/images/index/ImageGallery/Slide4.jpg" width="100%">
+            <img src="images/index/ImageGallery/Slide4.jpg" width="100%">
         </div>
     
         <div class="gallery">
         <div class="counter">5 / 5</div>
-            <img src="/images/index/ImageGallery/Slide5.jpg" width="100%">
+            <img src="images/index/ImageGallery/Slide5.jpg" width="100%">
         </div>
 
         <!-- Next and previous buttons -->
@@ -98,19 +118,19 @@
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-                <img class="peek active" src="/images/index/ImageGallery/Slide1.jpg" style="width:100%" onclick="currentSlide(1)" alt="What you expect to see in MTL">
+                <img class="peek active" src="images/index/ImageGallery/Slide1.jpg" style="width:100%" onclick="currentSlide(1)" alt="What you expect to see in MTL">
             </div>
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Appetizing food awaits you">
+                <img class="peek" src="images/index/ImageGallery/Slide2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Appetizing food awaits you">
             </div>
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Isn't that cute?">
+                <img class="peek" src="images/index/ImageGallery/Slide3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Isn't that cute?">
             </div>
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Explore the flavours of your excrements!">
+                <img class="peek" src="images/index/ImageGallery/Slide4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Explore the flavours of your excrements!">
             </div>
             <div class="column">
-                <img class="peek" src="/images/index/ImageGallery/Slide5.jpg" style="width:100%" onclick="currentSlide(5)" alt="What you actually see in MTL">
+                <img class="peek" src="images/index/ImageGallery/Slide5.jpg" style="width:100%" onclick="currentSlide(5)" alt="What you actually see in MTL">
             </div>
         </div>
     </div> 
