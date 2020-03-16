@@ -1,0 +1,169 @@
+body 
+{
+	background-color: black;
+}
+h1
+{
+	color: white;
+	text-align:center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #505050;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 80px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3D3D3 ;
+  color: black;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ .column {
+      cursor: pointer;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      text-align:center;
+	  float: left;
+	  width: 33.33%;
+	  padding: 5px;
+      }
+      .column .fadedbox {
+      background-color: #666666;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      transition: all 300ms ease-out;
+      opacity: 0;
+      width: 360px;
+      height: 100px;
+      padding: 130px 20px;
+      }
+      .column:hover .fadedbox { opacity: 0.8; }
+      .column .text {
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      transition: all 300ms ease-out;
+      transform: translateY(30px);
+      -webkit-transform: translateY(30px);
+      }
+      .column .title {
+      font-size: 121;
+      text-transform: uppercase;
+      opacity: 0;
+      transition-delay: 0.2s;
+      transition-duration: 0.3s;	  
+      }
+      .column:hover .title,
+      .column:focus .title {
+      opacity: 1;
+      transform: translateY(-120px);
+      -webkit-transform: translateY(-120px);
+      }
+	figure {
+	  display: block;
+	  margin-top: 1em;
+	  margin-bottom: 1em;
+	  margin-left: 40px;
+	  margin-right: 40px;
+	}
+	h3
+	{
+		color:white;
+		display: inline;
+	}
+		h2
+	{
+		color:white;
+		display: inline;
+	}
+		p
+	{
+		color:white;
+		display: inline;
+	}
+	
+	.seafood1
+	{
+		padding:0px 30px 10px 180px;
+		  width: 450px;
+		  display:inline-block;
+		  margin: 0;
+	}
+	
+	.vegetable1
+	{
+		padding:0px 30px 10px 90px;
+		  width: 300px;
+		  display:inline-block;
+		  margin: 0;	
+	}
+	
+	.meat1
+	{
+		padding:0px 30px 10px 210px;
+		  width: 450px;
+		  display:inline-block;
+		  margin: 0;	
+	}
+	
+			#backtoTop 
+		{
+			display: none;				 /* Hidden by default */
+			position: fixed; 			 /* Fixed/sticky position */
+			bottom: 20px; 				 /* Place the button at the bottom of the page */
+			right: 30px; 				 /* Place the button 30px from the right */
+			z-index: 99;				 /* Make sure it does not overlap */
+			border: none; 		   		 /* Remove borders */
+			outline: none;				 /* Remove outline */
+			background-color: red;		 /* Set a background color */
+			color: white; 				 /* Text color */
+			cursor: pointer; 			 /* Add a mouse pointer on hover */
+			padding: 15px; 				 /* Some padding */
+			border-radius: 10px; 		 /* Rounded corners */
+			font-size: 18px;			 /* Increase font size */
+		}
+
+		#backtoTop:hover 
+		{
+			background-color: #555; /* Add a white background on hover */
+		}
+
+.sub
+{
+	color:white;
+	text-align:center;
+}
+figcaption
+{
+	color:white;
+}
