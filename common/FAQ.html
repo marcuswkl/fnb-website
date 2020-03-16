@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .collapsible {
-  background-color: #777;
+  background-color: rgb(75, 76, 80);
   opacity: 0.8;
   color: white;
   cursor: pointer;
@@ -37,7 +37,6 @@
   width: 50%;
   float: left;
   margin-right: 10px;
-  border: solid red 1px;
   padding: auto;  
 }
 
@@ -45,7 +44,6 @@
   display: flex;
   flex-direction: column;
   max-width: 50%;
-  border: solid blue 1px;
   padding: auto;
 }
 
@@ -58,7 +56,6 @@
 #center{
   margin: auto;
   width: 85%;
-  border: solid green 1px;
 }
 
 #center::after{
@@ -67,13 +64,7 @@
   display: table;
 }
 body{
-  background: grey;
-}
-
-#contact{
-  position: relative;
-
- border: solid yellow 1px;
+  background-image: linear-gradient(to bottom right, white, black);
 }
 </style>
 <script src="../js/top-nav.js"></script>
@@ -83,24 +74,24 @@ body{
 <div ><img id="FAQpic" src = "../images/FAQ/FAQ.jpeg"></div>
 <div id="center">
   <div class="flexContainerLeft">
-        <button type="button" class="collapsible">Open Collapsible</button>
+        <button type="button" class="collapsible">Lorem ipsum</button>
         <div class="content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
-        <button type="button" class="collapsible">Open Q3</button>
+        <button type="button" class="collapsible">Lorem ipsum</button>
         <div class="content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
   </div>
 
   <div class="flexContainerRight">
-      <button type="button" class="collapsible">Open Collapsible</button>
+      <button type="button" class="collapsible">Lorem ipsum</button>
       <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
 
-      <button type="button" class="collapsible">Open Q3</button>
+      <button type="button" class="collapsible">Lorem ipsum</button>
       <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
@@ -139,10 +130,6 @@ for (i = 0; i < coll.length; i++) {
     });
   }
   </script>
-
-<div id="contact">
-  <p style="font: white;">insert contact here</p>
-</div>
 
 </body>
 </html>
