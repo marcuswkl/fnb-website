@@ -3,6 +3,7 @@ body {
     margin: 0;
     cursor: url("../images/index/poopcursor.png"),auto ;
     background-color: rgb(45,45,45);
+    
 }
 
 /*BG Image*/
@@ -23,8 +24,8 @@ body {
     display: block;
     width: 700px;
     height: 360px;
-    left: 50px;
-    top: 400px;
+    left: 5%;
+    top: 40%;
     background-image: -webkit-linear-gradient(left, rgba(0,0,0,80%), rgba(0,0,0,0%) );
     border-radius: 50px;
 }
@@ -134,3 +135,5 @@ body {
   .active, .peek:hover{
       opacity: 1;
   }
+
+  
