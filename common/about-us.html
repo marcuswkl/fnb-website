@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/index/favicon.ico" type="image/x-icon" sizes="16x16">
     <title>About Us</title>
-    <link rel="stylesheet" href="/css/about-us.css">
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <script src="../js/top-nav.js"></script>
+
   </head>
-  <body>
+
+  <body onload="topNav()">
+
     <div class="sidenav">
       <p onclick="displayHistory()">History</p>
       <p onclick="displayMission()">Mission</p>
       <p onclick="displayFounder()">Founder</p>
+      <p onclick="displayStaff()">Staff</p>
     </div>
 
     <div id="content">
       <h1>History</h1>
-      <img src="/images/about-us/history.jpg" alt="MaTongLao History">
+      <img src="../images/about-us/history.jpg" alt="MaTongLao History" style="width: 500px;">
       <p>
         MaTongLao 马桶捞 is a lavatory style steamboat restaurant which offers a
         bizarre dining experience. Its unique name originates from the term
@@ -25,7 +37,7 @@
         which combines the essence of food and toilets. He strongly believes
         that fusing the opposite polarities of delicious food and repulsive
         toilets will attract a lot of customers and dominate the F&B industry.
-        <br /><br />
+        <br><br>
         As there are many other strange themed restaurants in the industry,
         MaTongLao initially struggled against its strong competitors such as
         prison style or hospital style restaurants. With the increasing
@@ -40,6 +52,9 @@
         ranks first on TripAdvisor.
       </p>
     </div>
-    <script src="/js/about-us.js"></script>
+
+    <script src="../js/about-us.js"></script>
+
   </body>
+  
 </html>
