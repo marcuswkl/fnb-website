@@ -253,7 +253,7 @@ function topNav()
         </style>
 
         <div id ="topcontainer" class="topnav"> 
-            <img id="logo" src="../images/index/MTL Logo.PNG" alt="logo">
+            <img id="logo" src="images/index/MTL Logo.PNG" alt="logo">
             <nav id="topnavbar">
                 <a href="#contact">Contact</a>
                 <a href="#faq">FAQ</a>
