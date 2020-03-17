@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<link rel="icon" href="../../images/menu/menu-logo.png" type="image/png">
+		<link href="../../css/menu.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<title>Dishes</title>
+
+	</head>
+
+	<body>
+
+		<div class="topnav">
+			<a href="menu.html">Set</a>
+			<a href="dishes.html">Dishes</a>
+			<a href="beverages.html">Beverages</a>
+			<a href="dipping-sauces.html">Dipping Sauces</a>
+			<a href="soup-bases.html">Soup Bases</a>
+		</div>
+
+		<br>
+
+		<h1 style="font-variant: small-caps; font-size:3em;"><em><strong>Menu (Dishes)</strong></em></h1>
+
+		<div class="w3-content" style="width:400px">
+
+			<img class="mySlides" src="../../images/menu/crabstick.jpg" style="width:100%;height:300px;display:none">
+			<img class="mySlides" src="../../images/menu/fishball.jpg" style="width:100%;height:300px">
+			<img class="mySlides" src="../../images/menu/meatball.jpg" style="width:100%; height:300px;display:none">
+			<img class="mySlides" src="../../images/menu/ringroll.jpg" style="width:100%; height:300px;display:none">
+			<img class="mySlides" src="../../images/menu/seafood-tofu.jpeg" style="width:100%; height:300px;display:none">
+
+			<div class="w3-row-padding w3-section">
+
+				<div class="w3-col s4">
+					<img class="demo w3-opacity w3-hover-opacity-off" src="../../images/menu/crabstick.jpg"
+						style="width:100px;height:80px;cursor:pointer" onclick="currentDiv(1)">
+				</div>
+
+				<div class="w3-col s4">
+					<img class="demo w3-opacity w3-hover-opacity-off" src="../../images/menu/fishball.jpg"
+						style="width:100px;height:80px;cursor:pointer" onclick="currentDiv(2)">
+				</div>
+
+				<div class="w3-col s4">
+					<img class="demo w3-opacity w3-hover-opacity-off" src="../../images/menu/meatball.jpg"
+						style="width:100px;height:80px;cursor:pointer" onclick="currentDiv(3)">
+				</div>
+
+				<div class="w3-col s4" style="margin-top:10px">
+					<img class="demo w3-opacity w3-hover-opacity-off" src="../../images/menu/ringroll.jpg"
+						style="width:100px;height:80px;cursor:pointer" onclick="currentDiv(4)">
+				</div>
+
+				<div class="w3-col s4" style="margin-top:10px">
+					<img class="demo w3-opacity w3-hover-opacity-off" src="../../images/menu/seafood-tofu.jpeg"
+						style="width:100px;height:80px;cursor:pointer" onclick="currentDiv(5)">
+				</div>
+
+			</div>
+
+		</div>
+
+		<br><br>
+
+		<div class="sub" id="section2">
+
+			<h2><strong><u>Dishes</u></strong></h2>
+
+			<br><br><br><br>
+
+			<p>
+				Enjoy your meal with hassle-free and delicious fresh from the farm steamboat set, inclusive
+				of:
+			</p>
+
+		</div>
+
+		<br><br>
+
+		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+		<figure>
+
+			<div class="row">
+
+				<div class="column">
+
+					<img src="../../images/menu/crabstick.jpg" alt="crabstick" width="250px" height="200px">
+
+					<div class="fadedbox">
+						<div class="title text"> <br> <br><br>crabstick (5 pieces)
+							<br><br><em>RM50<em>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="column">
+
+					<img src="../../images/menu/fishball.jpg" alt="fishball" width="250px" height="200px">
+
+					<div class="fadedbox">
+						<div class="title text"> <br><br><br>fishball (5 pieces)
+							<br><br><em>RM30<em>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="column">
+
+					<img src="../../images/menu/meatball.jpg" alt="meatball" width="250px" height="200px">
+
+					<div class="fadedbox">
+						<div class="title text"> <br><br><br>meatball (5 pieces)
+							<br><br><em>RM35<em>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="column" style="margin-top:20px">
+
+					<img src="../../images/menu/ringroll.jpg" alt="ringroll" width="250px" height="200px">
+
+					<div class="fadedbox">
+						<div class="title text"> <br><br><br>ringroll (5 pieces)
+							<br><br><em>RM20<em>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="column" style="margin-top:20px">
+
+					<img src="../../images/menu/seafood-tofu.jpeg" alt="seafood tofu" width="250px" height="200px">
+
+					<div class="fadedbox">
+						<div class="title text"> <br><br><br>seafood tofu (10 pieces)
+							<br><br><em>RM50<em>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<br><br><br><br><br><br><br><br>
+
+		<button onclick="topFunction()" id="backtoTop" title="Go to top">Back to Top</button>
+
+		<script type="text/javascript" src="../../js/menu.js"></script>
+
+	</body>
+
+</html>
