@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html>
+  <title>FAQ</title>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src="../js/top-nav.js"></script>
-<link href="../css/FAQ.css" rel="stylesheet">
+  <script src="../js/top-nav.js"></script>
+  <script src="../js/FAQ.js"></script>
+  <link href="../css/FAQ.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+  <script src="../js/top-nav.js"></script>
 </head>
+
 <body onload="topNav()">
 
-<div ><img id="FAQpic" src = "../images/FAQ/FAQ.jpeg"></div>
-<div id="center">
-  <div class="flexContainerLeft">
-        <button type="button" class="collapsible">Lorem ipsum</button>
+  <div ><img id="FAQpic" src = "../images/FAQ/FAQ.jpeg"></div>
+  <div id="center">
+    <div class="flexContainerLeft">
+          <button type="button" class="collapsible">What is your business hours?</button>
+          <div class="content">
+            <p>Daily 10am. to 3am. The remaining 7 hours is for us to clean your shits :D</p>
+          </div>
+
+          <button type="button" class="collapsible">Why do you choose Ma Tong as your theme?</button>
+          <div class="content">
+            <p>As our slogan stated, "Your disgust is our honor." We feel honored when customers cannot tahan and just leave, but kiasu and keep coming to challenge their limits.</p>
+          </div>
+
+          <button type="button" class="collapsible">Can I do birthday/any other celebrations in MTL?</button>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>We definitely accept all reservations for any celebrations.. The real question is... <strong>Are you prepared for what's coming? *smirks*</strong> </strong></p>
+        </div>
+    </div>
+
+    <div class="flexContainerRight">
+        <button type="button" class="collapsible">Why is your founder so handsome lengchai cute and adorable at the same time? &lt;3 </button>
+        <div class="content">
+          <p>Do not question; For he is <i>The One and Superior.</i></p>
         </div>
 
-        <button type="button" class="collapsible">Lorem ipsum</button>
+        <button type="button" class="collapsible">Is MTL affected by the partial lockdown?</button>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Unfortunately yes :( MTL hope that the outbreak will come to an end soon, and we hope to get back on the business rail ASAP and bring eternal disgust to our most beloved toxic customers :D</p>
         </div>
 
-        <button type="button" class="collapsible">Lorem ipsum</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+        <button type="button" class="collapsible">Can I do "something"... on the Ma Tong I'm sitting/where the food is in?</button>
+        <div class="content">
+          <p>NO. <strong>You will be having curry rice as your meal for the rest of your life if you do so :). </strong>DO NOT CHALLENGE.</p>
+        </div>
+    </div>
   </div>
 
-  <div class="flexContainerRight">
-      <button type="button" class="collapsible">Lorem ipsum</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">Lorem ipsum</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">Lorem ipsum</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-  </div>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-<script>
+  <script>
   var coll = document.getElementsByClassName("collapsible");
   var i;
-  
+
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
+      if (content.style.display === "block") {
+        content.style.display = "none";
       } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.display = "block";
       }
     });
   }
   </script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+
+  <br><br>
 
 </body>
 </html>
