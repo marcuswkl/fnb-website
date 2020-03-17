@@ -235,7 +235,7 @@ function topNav()
     <a class="navBarA" href="../common/FAQ.html">FAQ</a>
     <a class="navBarA" id="joinUs" onclick="popUpForm()">Join Us</a>
     <a class="navBarA" href="../common/reservations.html">Reservations</a>
-    <a class="navBarA" href="../common/menu.html">Menu</a>
+    <a class="navBarA" href="../common/menu/menu.html">Menu</a>
     <a class="navBarA" href="../common/about-us.html">About Us</a>
 </nav>
 </div>
