@@ -8,7 +8,7 @@ body {
 
 /*BG Image*/
 .backgroundImg{
-    overflow: hidden;
+    overflow-x: hidden;
     max-width: 100vw;
     position: relative;
     top:0;   
@@ -59,11 +59,13 @@ body {
 
 /*Slideshow*/
 .slideshow {
+    overflow-x: hidden;
     position: relative;
     top:0;
 }
 
 .gallery {
+    overflow-x: hidden;
     display: none;
     margin-bottom: -10px;
 }
