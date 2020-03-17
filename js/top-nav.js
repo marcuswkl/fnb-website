@@ -7,7 +7,7 @@ function navBar() {
     //For nav bar
     if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110)
     {
-        document.getElementById("topcontainer").style.height = "13vh";
+        document.getElementById("topcontainer").style.height = "130px";
         document.getElementById("topnavbar").style.padding = "15px 10px";
         document.getElementById("logo").style.padding = "10px";
         document.getElementById("logo").style.height = "110px";
@@ -15,7 +15,7 @@ function navBar() {
     } 
     else 
     {
-        document.getElementById("topcontainer").style.height = "18vh";
+        document.getElementById("topcontainer").style.height = "170px";
         document.getElementById("topnavbar").style.padding = "30px 10px";
         document.getElementById("logo").style.padding = "25px";
         document.getElementById("logo").style.height = "130px";
@@ -289,7 +289,6 @@ document.body.insertAdjacentHTML("beforeend",
         }
     
         .footer .footer_table{
-            table-layout: fixed;
             width: 100%;
             border-collapse: collapse;
     
@@ -305,55 +304,81 @@ document.body.insertAdjacentHTML("beforeend",
         }
     
         .footer .footer_table p{
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        padding: 0px 50px 0px 15px;
-    }
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            padding: 0px 50px 0px 15px;
+        }
+
+        .footer .footer_table td{
+            margin-top: auto;
+        }
     
-    .footer #table2{
-        table-layout: fixed;
-        border: none;
-        border-collapse: collapse;
-    }
-    
-    .footer #table2 #row1{
-        width: 30%;
-    }
+        .footer #table2{
+            table-layout: fixed;
+            border: none;
+            border-collapse: collapse;
+        }
+        
+        .footer #table2 #row1{
+            width: 30%;
+        }
+
+        .footer #listFooter{
+            position: relative;
+            top: 12px;
+            left: 20px;
+        }
+
+        .footer ul{
+            position: relative;
+            top: -20px;
+            list-style-type: none;
+            padding: 10px 0px 10px 0px;
+            border-left: 5px solid rgb(207, 21, 21);
+        }
+
+        .footer li:not(:last-child){
+            padding: 0px 0px 10px 0px;
+        }
     </style>
 
     <div class="footer">
         <table class="footer_table">
             <tr>
                 <td>
-                    <a href="../common/FAQ.html">FAQ</a>  <br><br>
-                    <a id="joinUs" onclick="popUpForm()">Join Us</a> <br><br>
-                    <a href="../common/reservations.html">Reservations</a> <br><br>
-                    <a href="../common/menu.html">Menu</a> <br><br>
-                    <a href="../common/about-us.html">About Us</a> <br><br>
+                    <div id="listFooter">
+                        <p style="text-decoration:underline;">Navigation</p><br>
+                        <ul>
+                            <li> <a href="../common/FAQ.html">FAQ</a>  <br> </li>
+                            <li> <a id="joinUs" onclick="popUpForm()">Join Us</a> <br> </li>
+                            <li> <a href="../common/reservations.html">Reservations</a> <br> </li>
+                            <li> <a href="../common/menu.html">Menu</a> <br> </li>
+                            <li> <a href="../common/about-us.html">About Us</a> <br> </li>
+                        </ul>
+                    </div>
                 </td>
                 <td>
+                    <p style="text-decoration:underline;">Contact Us</p>
                     <table id="table2">
-                        <tr >
-                            <td id="row1"><img src="../images/index/facebook.png" style="width:40px;height:40px;"><p>Ma Tong Lao FB</p></td>
-                            <td><img src="../images/index/phone.png" style="width:40px;height:40px;"><p>1-300-666-696</p></td>
+                        <tr>
+                            <td id="row1"><img src="../images/index/facebook.png" style="width:30px;height:30px;"><p>Ma Tong Lao FB</p></td>
+                            <td><img src="../images/index/phone.png" style="width:30px;height:30px;"><p>1-300-666-696</p></td>
                         </tr>
                         <tr>
-                            <td id="row1"><img src="../images/index/instagram.png" style="width:40px;height:40px;"><p>@Official_MTL</p></td>
-                            <td><img src="../images/index/email.png" style="width:40px;height:40px;"><p>mtl@gmail.com.my</p></td>
+                            <td id="row1"><img src="../images/index/instagram.png" style="width:30px;height:30px;"><p>@Official_MTL</p></td>
+                            <td><img src="../images/index/email.png" style="width:30px;height:30px;"><p>mtl@gmail.com.my</p></td>
                         </tr>
                         <tr>
-                            <td id="row1"><img src="../images/index/twitter.png" style="width:40px;height:40px;"><p>@MTL_Tweet</p></td>
-                            <td><img src="../images/index/placeholder.png" style="width:40px;height:40px;"><p> Sunway Velocity, Lingkaran SV, Maluri, 55100 Kuala Lumpur</p></td>
+                            <td id="row1"><img src="../images/index/twitter.png" style="width:30px;height:30px;"><p>@MTL_Tweet</p></td>
+                            <td><img src="../images/index/placeholder.png" style="width:30px;height:30px;"><p> Sunway Velocity, Lingkaran SV, Maluri, 55100 Kuala Lumpur</p></td>
                         </tr>
                     </table>
                    
                 </td>
-            </tr>
-            <tr>
                 <td>
                     <p>Copyright © 2020 Ma Tong Lao Sdn. Bhd.</p>
-                    <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Terms </a>
+                    <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Terms</a>
                     <a href="https://youtu.be/Fkk9DI-8el4?t=33" target="_blank">Privacy Policy</a>
                 </td>
             </tr>
