@@ -1,0 +1,26 @@
+.collapsible {
+    background-color: #777;
+    background-color: rgb(75, 76, 80);
+    opacity: 0.8;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    margin-right: 10px;
+    padding: auto;  
+  }
+  
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: auto;
+  }
+  
+  #center{
+    margin: auto;
+    width: 85%;
+  }
+  
+  #center::after{
+    display: table;
+  }
