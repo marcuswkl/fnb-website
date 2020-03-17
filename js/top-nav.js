@@ -79,6 +79,7 @@ function topNav()
     }
 
     #topnavbar {
+        overflow:hidden;
         display: flex;
         transition: 0.4s;
         padding: 30px 10px;
@@ -155,13 +156,14 @@ function topNav()
     }
 
     #form_joinUs #submit {
-        position: absolute;
+        position: relative;
+        bottom: 5%;
+        right: 0%;
+        float:right;
         background-color: rgb(144, 248, 83);
         padding: 18px;
         border-radius: 15px;
         font-size: 20px;
-        bottom: 20px;
-        right: 20px;
         border: none;
         cursor: url("../images/index/poopcursor.png"),auto ;
     }
@@ -172,9 +174,10 @@ function topNav()
     }
 
     #form_joinUs #remember1{
-        position: absolute;
-        bottom: 90px;
-        right: 20px;
+        float:right;
+        position: relative;
+        bottom: 0px;
+        right: 2%;
         cursor: url("../images/index/poopcursor.png"),auto ;
     }
     #form_joinUs #remember1 #remember2 {
@@ -271,8 +274,8 @@ function topNav()
                 </td>
             </tr>
     </table>
-        <label id="remember1"><input id="remember2" type="checkbox" name="remember"> Remember me</label>
         <input id="submit" type="submit" value="Submit">
+        <label id="remember1"><input id="remember2" type="checkbox" name="remember">Remember me</label>
     </form>
 </div>
 
@@ -282,6 +285,7 @@ document.body.insertAdjacentHTML("beforeend",
     `  
     <style>
         .footer{
+            margin-top: auto;
             position: relative;
             background-color: rgba(46, 46, 46, 0.8);
             border: none;
@@ -314,14 +318,15 @@ document.body.insertAdjacentHTML("beforeend",
             margin-top: auto;
         }
     
-        .footer #table2{
+        .footer #table2, tr, td{
+            padding-left: 10px;
             table-layout: fixed;
             border: none;
             border-collapse: collapse;
         }
         
         .footer #table2 #row1{
-            width: 30%;
+            width: 40%;
         }
 
         .footer #listFooter{
@@ -341,6 +346,7 @@ document.body.insertAdjacentHTML("beforeend",
         .footer li:not(:last-child){
             padding: 0px 0px 10px 0px;
         }
+        
     </style>
 
     <div class="footer">
@@ -371,13 +377,13 @@ document.body.insertAdjacentHTML("beforeend",
                         </tr>
                         <tr>
                             <td id="row1"><img src="../images/index/twitter.png" style="width:30px;height:30px;"><p>@MTL_Tweet</p></td>
-                            <td><img src="../images/index/placeholder.png" style="width:30px;height:30px;"><p> Sunway Velocity, Lingkaran SV, Maluri, 55100 Kuala Lumpur</p></td>
+                            <td><img src="../images/index/placeholder.png" style="width:30px;height:30px;"><p> Sunway Velocity, Lingkaran SV, <br>Maluri, 55100 Kuala Lumpur</p></td>
                         </tr>
                     </table>
                    
                 </td>
                 <td>
-                    <p>Copyright © 2020 Ma Tong Lao Sdn. Bhd.</p>
+                    <p>Copyright © 2020 Ma Tong Lao Sdn. Bhd.</p><br>
                     <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Terms</a>
                     <a href="https://youtu.be/Fkk9DI-8el4?t=33" target="_blank">Privacy Policy</a>
                 </td>
