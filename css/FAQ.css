@@ -1,3 +1,7 @@
+body {
+  font-family: Tomorrow, Roboto;
+}
+
 .collapsible {
     background-color: rgb(75, 76, 80);
     opacity: 0.8;
@@ -11,6 +15,7 @@
     margin-top: 10px;
     max-height: 2;
     transition: max-height 0.2s ease-out;
+    font-family: Tomorrow, Roboto;
   }
   
   .active, .collapsible:hover {

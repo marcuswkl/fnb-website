@@ -1,10 +1,10 @@
 body {
   cursor: url("../images/index/poopcursor.png"), auto;
-  background-color: rgb(45, 45, 45);
+  background-color: #121212;
+  font-family: Tomorrow, Roboto;
 }
 
 .sidenav {
-  padding-top: 10vh;
   height: auto;
   width: 230px;
   position: fixed;
@@ -28,9 +28,8 @@ body {
 }
 
 #content {
-  margin-top: 120px;
-  margin-left: 250px;
-  padding-top: 10vh;
+  margin-top: 170px;
+  margin-left: 235px;
   padding-left: 20px;
   padding-right: 20px;
   color: white;
