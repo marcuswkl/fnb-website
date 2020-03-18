@@ -7,12 +7,14 @@ h1 {
 	text-align: center;
 }
 
-.topnav {
+.topnav1 {
 	overflow: hidden;
 	background-color: #505050;
+	position:relative;
+	padding-top:170px;
 }
 
-.topnav a {
+.topnav1 a {
 	float: left;
 	color: white;
 	text-align: center;
@@ -21,7 +23,7 @@ h1 {
 	font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav1 a:hover {
 	background-color: #D3D3D3;
 	color: black;
 }
@@ -96,7 +98,6 @@ h1 {
 
 figure {
 	display: block;
-	margin-top: 1em;
 	margin-bottom: 1em;
 	margin-left: 40px;
 	margin-right: 40px;
