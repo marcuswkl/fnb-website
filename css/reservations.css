@@ -1,24 +1,56 @@
 body {
     background-color: #121212;
     color: white;
-  }
+    cursor: url("../images/index/poopcursor.png"), auto;
+    font-family: Tomorrow, Roboto;
+}
 
 .content {
     margin-top: 120px;
-    text-align: center;
+    padding-top: 1vh;
     font-size: 32px;
 }
 
 .content #title {
+    text-align: center;
     font-size: 72px;
 }
 
-.content label {
-    padding: 10px;
+.content #frmData {
+    text-align: left;
+    display: flex;
+    justify-content: center;
 }
 
-.content input, select, textarea {
-    margin-bottom: 30px;
-    width: 270px;
+.content label,
+input,
+select,
+textarea {
     font-size: 24px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+}
+
+.content input,
+textarea {
+    width: 300px;
+}
+
+.content select {
+    width: 312px;
+}
+
+input[type=submit],
+input[type=reset] {
+    border: none;
+    background-color: darkslategray;
+    color: white;
+    padding: 16px 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: gray;
 }
