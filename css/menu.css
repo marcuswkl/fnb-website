@@ -7,24 +7,21 @@ h1 {
 	text-align: center;
 }
 
-.topnav1 {
+.topnav {
 	overflow: hidden;
 	background-color: #505050;
-	position: relative;
-	padding-top: 170px;
 }
 
-.topnav1 a {
+.topnav a {
 	float: left;
 	color: white;
 	text-align: center;
 	padding: 14px 80px;
 	text-decoration: none;
 	font-size: 17px;
-	font-family: Tomorrow, Roboto;
 }
 
-.topnav1 a:hover {
+.topnav a:hover {
 	background-color: #D3D3D3;
 	color: black;
 }
@@ -63,8 +60,8 @@ h1 {
 	-ms-transition: all 300ms ease-out;
 	transition: all 300ms ease-out;
 	opacity: 0;
-	width: 30vw;
-	height: 10vh;
+	width: 360px;
+	height: 100px;
 	padding: 130px 20px;
 }
 
@@ -99,6 +96,7 @@ h1 {
 
 figure {
 	display: block;
+	margin-top: 1em;
 	margin-bottom: 1em;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -117,7 +115,6 @@ h2 {
 p {
 	color: white;
 	display: inline;
-	font-family: Tomorrow, Roboto;
 }
 
 .seafood1 {
@@ -182,13 +179,4 @@ p {
 
 figcaption {
 	color: white;
-}
-
-.title1 {
-	font-variant: small-caps;
-	font-size: 3em;
-}
-
-.w3-content {
-	width: 400px;
 }
