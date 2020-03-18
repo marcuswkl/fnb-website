@@ -359,7 +359,7 @@ document.body.insertAdjacentHTML("beforeend",
                             <li> <a href="../common/FAQ.html">FAQ</a>  <br> </li>
                             <li> <a id="joinUs" onclick="popUpForm()">Join Us</a> <br> </li>
                             <li> <a href="../common/reservations.html">Reservations</a> <br> </li>
-                            <li> <a href="../common/menu.html">Menu</a> <br> </li>
+                            <li> <a href="../common/menu/menu.html">Menu</a> <br> </li>
                             <li> <a href="../common/about-us.html">About Us</a> <br> </li>
                         </ul>
                     </div>
