@@ -1,90 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Reservations</title>
-    <link rel="stylesheet" href="/css/reservations.css">
-</head>
-<body>
-    <div class="content">
-        <h1 id="title">Reservations</h1>
-        <form>
 
-            <label for="fname">First Name:</label>
-            <input id="fname" type="text">
+    <head>
 
-            <label for="lname">Last Name:</label>
-            <input id="lname" type="text"><br>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../images/index/favicon.ico" type="image/x-icon" sizes="16x16">
+        <title>Reservations</title>
+        <link rel="stylesheet" href="../css/reservations.css">
+        <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="../js/top-nav.js"></script>
 
-            <label for="email">Email:</label><br>
-            <input id="email" type="email"><br>
+    </head>
 
-            <label for="phone">Phone Number:</label><br>
-            <input id="phone" type="number"><br>
+    <body onload="topNav()">
 
-            <label for="location">Restaurant Location:</label><br>
-            <select id="location" name="location">
-                <option value="Sunway Velocity">Sunway Velocity</option>
-                <option value="Sunway Pyramid">Sunway Pyramid</option>
-                <option value="1 Utama Shopping Centre">1 Utama Shopping Centre</option>
-                <option value="Pavilion KL">Pavilion KL</option>
-                <option value="Suria KLCC">Suria KLCC</option>
-            </select><br>
+        <div class="content">
 
-            <label for="date">Date:</label><br>
-            <input id="date" type="date"><br>
+            <h1 id="title">Reservations</h1>
 
-            <label for="time">Time:</label><br>
-            <select id="time" name="time">
-                <option value="10:00">10:00</option>
-                <option value="10:30">10:30</option>
-                <option value="11:00">11:00</option>
-                <option value="11:30">11:30</option>
-                <option value="12:00">12:00</option>
-                <option value="12:30">12:30</option>
-                <option value="13:00">13:00</option>
-                <option value="13:30">13:30</option>
-                <option value="14:00">14:00</option>
-                <option value="14:30">14:30</option>
-                <option value="15:00">15:00</option>
-                <option value="15:30">15:30</option>
-                <option value="16:00">16:00</option>
-                <option value="16:30">16:30</option>
-                <option value="17:00">17:00</option>
-                <option value="17:30">17:30</option>
-                <option value="18:00">18:00</option>
-                <option value="18:30">18:30</option>
-                <option value="19:00">19:00</option>
-                <option value="19:30">19:30</option>
-                <option value="20:00">20:00</option>
-                <option value="20:30">20:30</option>
-                <option value="21:00">21:00</option>
-                <option value="21:30">21:30</option>
-                <option value="22:00">22:00</option>
-                <option value="22:30">22:30</option>
-            </select><br>
+            <form id="frmData" name="frmData" action="/action_page.php" method="post">
 
-            <label for="guest">No. of Guests:</label><br>
-            <select id="guest" name="guest">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br>
+                <table>
 
-            <label for="request">Special Requests:</label><br>
-            <textarea id="request" rows="5" cols="30"></textarea><br>
+                    <tr>
+                        <td><label for="tfFname">First Name:</label></td>
+                        <td><input id="tfFname" name="tfFname" type="text"></td>
+                    </tr>
 
-            <input id="submit" type="submit" value="Submit" onclick="clickSubmit()" style="width: 100px;">
+                    <tr>
+                        <td><label for="tfLname">Last Name:</label></td>
+                        <td><input id="tfLname" name="tfLname" type="text"></td>
+                    </tr>
 
-        </form>
-    </div>
-    <script src="/js/reservations.js"></script>
-</body>
+                    <tr>
+                        <td><label for="tfEmail">Email:</label></td>
+                        <td><input id="tfEmail" name="tfEmail" type="email"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="tfPhone">Phone Number:</label></td>
+                        <td><input id="tfPhone" name="tfPhone" type="number"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="opLocation">Restaurant Location:</label></td>
+                        <td>
+                            <select id="opLocation" name="opLocation">
+                                <option value="Sunway Velocity">Sunway Velocity</option>
+                                <option value="Sunway Pyramid">Sunway Pyramid</option>
+                                <option value="1 Utama Shopping Centre">1 Utama Shopping Centre</option>
+                                <option value="Pavilion KL">Pavilion KL</option>
+                                <option value="Suria KLCC">Suria KLCC</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="tfDate">Date:</label></td>
+                        <td><input id="tfDate" name="tfDate" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="opTime">Time:</label></td>
+                        <td>
+                            <select id="opTime" name="opTime">
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                            </select>
+                        </td>
+
+                    <tr>
+                        <td><label for="opGuest">No. of Guests:</label></td>
+                        <td>
+                            <select id="opGuest" name="opGuest">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="tfRequest">Special Requests:</label></td>
+                        <td><textarea id="tfRequest" name="tfRequest" rows="5" cols="30"></textarea></td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>
+                            <input id="bSubmit" name="bSubmit" type="submit" value="Submit" onclick="clickSubmit()"
+                                style="width: 100px;">
+                        </td>
+                        <td>
+                            <input id="bReset" name="bReset" type="reset" value="Cancel" name="bReset"
+                                style="width: 100px;">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+        </div>
+
+        <script src="../js/reservations.js"></script>
+
+    </body>
+
 </html>
