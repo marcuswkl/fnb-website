@@ -105,3 +105,28 @@ function carousel() {
   setTimeout(carousel, 4000);
   
 }
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+  navBar();
+}
+
+function navBar() {
+  //For nav bar
+  if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110)
+  {
+      document.getElementById("topcontainer").style.height = "130px";
+      document.getElementById("topnavbar").style.padding = "15px 10px";
+      document.getElementById("logo").style.padding = "10px";
+      document.getElementById("logo").style.height = "110px";
+      document.getElementById("logo").style.width = "110px";
+  } 
+  else 
+  {
+      document.getElementById("topcontainer").style.height = "170px";
+      document.getElementById("topnavbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.padding = "25px";
+      document.getElementById("logo").style.height = "130px";
+      document.getElementById("logo").style.width = "130px";
+  }
+}

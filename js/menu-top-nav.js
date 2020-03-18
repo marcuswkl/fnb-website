@@ -1,27 +1,4 @@
-//Import for topnav with form
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {navBar()};
 
-
-function navBar() {
-    //For nav bar
-    if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110)
-    {
-        document.getElementById("topcontainer").style.height = "130px";
-        document.getElementById("topnavbar").style.padding = "15px 10px";
-        document.getElementById("logo").style.padding = "10px";
-        document.getElementById("logo").style.height = "110px";
-        document.getElementById("logo").style.width = "110px";
-    } 
-    else 
-    {
-        document.getElementById("topcontainer").style.height = "170px";
-        document.getElementById("topnavbar").style.padding = "30px 10px";
-        document.getElementById("logo").style.padding = "25px";
-        document.getElementById("logo").style.height = "130px";
-        document.getElementById("logo").style.width = "130px";
-    }
-}
 
 function popUpForm()
 {   
@@ -64,7 +41,7 @@ function topNav()
         overflow: hidden;
         background-color: rgba(41, 41, 41, 0.6);
         position: fixed;
-        height: 18vh;
+        height: 170px;
         width: 100%;
         top:0;
         z-index: 5;
