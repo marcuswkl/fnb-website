@@ -104,7 +104,7 @@ function topNav()
 
         border-radius: 40px;
         border: none;
-        cursor: url("images/index/poopcursor.png"),auto ;
+        cursor: url("../images/index/poopcursor.png"),auto ;
     }
 
     #topnavbar a:hover{
@@ -165,12 +165,12 @@ function topNav()
         border-radius: 15px;
         font-size: 20px;
         border: none;
-        cursor: url("images/index/poopcursor.png"),auto ;
+        cursor: url("../images/index/poopcursor.png"),auto ;
     }
 
     #form_joinUs #submit:hover {
         background-color: rgb(181, 255, 138);
-        cursor: url("images/index/poopcursor.png"),auto ;
+        cursor: url("../images/index/poopcursor.png"),auto ;
     }
 
     #form_joinUs #remember1{
@@ -178,11 +178,11 @@ function topNav()
         position: relative;
         bottom: 0px;
         right: 2%;
-        cursor: url("images/index/poopcursor.png"),auto ;
+        cursor: url("../images/index/poopcursor.png"),auto ;
     }
     #form_joinUs #remember1 #remember2 {
         right: 0px;
-        cursor: url("images/index/poopcursor.png"),auto ;
+        cursor: url("../images/index/poopcursor.png"),auto ;
     }
     
     #form_joinUs #form_table{
@@ -209,11 +209,11 @@ function topNav()
         border-radius: 15px;
         color: white;
         background-color: rgb(150, 91, 23);
-        cursor: url("images/index/poopcursor.png"),auto ;
+        cursor: url("../images/index/poopcursor.png"),auto ;
     }
 
     .radiobut, #form_div label {
-        cursor: url("images/index/poopcursor.png"),auto;
+        cursor: url("../images/index/poopcursor.png"),auto;
     }
 
     #back{
@@ -228,18 +228,18 @@ function topNav()
         color: white;
         text-decoration: none;
         font-weight: bold;
-        cursor: url("images/index/poopcursor.png"),auto ;
+        cursor: url("../images/index/poopcursor.png"),auto ;
     }
 </style>
 
 <div id ="topcontainer" class="topnav"> 
-<a href="index.html"><img id="logo" src="images/index/MTL Logo.PNG" style="width:130px; height:130px;"></a>
+<a href="../index.html"><img id="logo" src="../images/index/MTL Logo.PNG" style="width:130px; height:130px;"></a>
 <nav id="topnavbar">
-    <a class="navBarA" href="common/FAQ.html">FAQ</a>
+    <a class="navBarA" href="../common/FAQ.html">FAQ</a>
     <a class="navBarA" id="joinUs" onclick="popUpForm()">Join Us</a>
-    <a class="navBarA" href="common/reservations.html">Reservations</a>
-    <a class="navBarA" href="common/menu/menu.html">Menu</a>
-    <a class="navBarA" href="common/about-us.html">About Us</a>
+    <a class="navBarA" href="../common/reservations.html">Reservations</a>
+    <a class="navBarA" href="../common/menu/menu.html">Menu</a>
+    <a class="navBarA" href="../common/about-us.html">About Us</a>
 </nav>
 </div>
 
@@ -356,11 +356,11 @@ document.body.insertAdjacentHTML("beforeend",
                     <div id="listFooter">
                         <p style="text-decoration:underline;">Navigation</p><br>
                         <ul>
-                            <li> <a href="common/FAQ.html">FAQ</a>  <br> </li>
+                            <li> <a href="../common/FAQ.html">FAQ</a>  <br> </li>
                             <li> <a id="joinUs" onclick="popUpForm()">Join Us</a> <br> </li>
-                            <li> <a href="common/reservations.html">Reservations</a> <br> </li>
-                            <li> <a href="common/menu/menu.html">Menu</a> <br> </li>
-                            <li> <a href="common/about-us.html">About Us</a> <br> </li>
+                            <li> <a href="../common/reservations.html">Reservations</a> <br> </li>
+                            <li> <a href="../common/menu/menu.html">Menu</a> <br> </li>
+                            <li> <a href="../common/about-us.html">About Us</a> <br> </li>
                         </ul>
                     </div>
                 </td>
@@ -368,16 +368,16 @@ document.body.insertAdjacentHTML("beforeend",
                     <p style="text-decoration:underline;">Contact Us</p>
                     <table id="table2">
                         <tr>
-                            <td id="row1"><img src="images/index/facebook.png" style="width:30px;height:30px;"><p>Ma Tong Lao FB</p></td>
-                            <td><img src="images/index/phone.png" style="width:30px;height:30px;"><p>1-300-666-696</p></td>
+                            <td id="row1"><img src="../images/index/facebook.png" style="width:30px;height:30px;"><p>Ma Tong Lao FB</p></td>
+                            <td><img src="../images/index/phone.png" style="width:30px;height:30px;"><p>1-300-666-696</p></td>
                         </tr>
                         <tr>
-                            <td id="row1"><img src="images/index/instagram.png" style="width:30px;height:30px;"><p>@Official_MTL</p></td>
-                            <td><img src="images/index/email.png" style="width:30px;height:30px;"><p>mtl@gmail.com.my</p></td>
+                            <td id="row1"><img src="../images/index/instagram.png" style="width:30px;height:30px;"><p>@Official_MTL</p></td>
+                            <td><img src="../images/index/email.png" style="width:30px;height:30px;"><p>mtl@gmail.com.my</p></td>
                         </tr>
                         <tr>
-                            <td id="row1"><img src="images/index/twitter.png" style="width:30px;height:30px;"><p>@MTL_Tweet</p></td>
-                            <td><img src="images/index/placeholder.png" style="width:30px;height:30px;"><p> Sunway Velocity, Lingkaran SV, <br>Maluri, 55100 Kuala Lumpur</p></td>
+                            <td id="row1"><img src="../images/index/twitter.png" style="width:30px;height:30px;"><p>@MTL_Tweet</p></td>
+                            <td><img src="../images/index/placeholder.png" style="width:30px;height:30px;"><p> Sunway Velocity, Lingkaran SV, <br>Maluri, 55100 Kuala Lumpur</p></td>
                         </tr>
                     </table>
                    
