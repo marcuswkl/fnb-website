@@ -385,7 +385,7 @@ document.body.insertAdjacentHTML("beforeend",
                 <td>
                     <p>Copyright © 2020 Ma Tong Lao Sdn. Bhd.</p><br>
                     <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Terms</a>
-                    <a href="https://youtu.be/Fkk9DI-8el4?t=33" target="_blank">Privacy Policy</a>
+                    <a href="https://youtu.be/Fkk9DI-8el4?t=33" target="_blank">Privacy Policy </a>
                 </td>
             </tr>
         </table>
