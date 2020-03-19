@@ -117,10 +117,10 @@ function displayStaff() {
 <img src="../images/about-us/chef1.jpg" alt="Chef Lim Tse Weoi">
 
 <p>
-    Lim Tse Weoi  was a Chinese chef and restaurateur. He was named "Chef of the Century" by the guide
+    Lim Tse Weoi  is a Chinese chef and restaurateur. He was named "Chef of the Century" by the guide
     Mao Zedong in 1989, and awarded the Communist Chef Award in cuisine in 1976. He published several 
     cookbooks, two of which have been translated into English, chaired the committee for the Republic 
-    of China Communist Chef Party, and hosted culinary television shows in Wuhan in 2020. He operated 
+    of China Communist Chef Party, and hosted culinary television shows in Wuhan in 2020. He operates 
     more than a dozen restaurants in Bangkok, Bordeaux, Hong Kong, Las Vegas, London, Macau, Monaco, 
     Montreal, Paris, Shanghai, Singapore, Taipei, Tokyo, and New York City, with the highest record of 
     a total of 420 Michelin Guide stars among them, the most of any chef in the world.
