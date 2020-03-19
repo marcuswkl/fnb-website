@@ -27,28 +27,28 @@
 
                     <tr>
                         <td><label for="tfFname">First Name:</label></td>
-                        <td><input id="tfFname" name="tfFname" type="text"></td>
+                        <td><input id="tfFname" name="tfFname" type="text" required></td>
                     </tr>
 
                     <tr>
                         <td><label for="tfLname">Last Name:</label></td>
-                        <td><input id="tfLname" name="tfLname" type="text"></td>
+                        <td><input id="tfLname" name="tfLname" type="text" required></td>
                     </tr>
 
                     <tr>
                         <td><label for="tfEmail">Email:</label></td>
-                        <td><input id="tfEmail" name="tfEmail" type="email"></td>
+                        <td><input id="tfEmail" name="tfEmail" type="email" required></td>
                     </tr>
 
                     <tr>
                         <td><label for="tfPhone">Phone Number:</label></td>
-                        <td><input id="tfPhone" name="tfPhone" type="number"></td>
+                        <td><input id="tfPhone" name="tfPhone" type="number" required></td>
                     </tr>
 
                     <tr>
                         <td><label for="opLocation">Restaurant Location:</label></td>
                         <td>
-                            <select id="opLocation" name="opLocation">
+                            <select id="opLocation" name="opLocation" required>
                                 <option value="Sunway Velocity">Sunway Velocity</option>
                                 <option value="Sunway Pyramid">Sunway Pyramid</option>
                                 <option value="1 Utama Shopping Centre">1 Utama Shopping Centre</option>
@@ -60,13 +60,13 @@
 
                     <tr>
                         <td><label for="tfDate">Date:</label></td>
-                        <td><input id="tfDate" name="tfDate" type="date"></td>
+                        <td><input id="tfDate" name="tfDate" type="date" required></td>
                     </tr>
 
                     <tr>
                         <td><label for="opTime">Time:</label></td>
                         <td>
-                            <select id="opTime" name="opTime">
+                            <select id="opTime" name="opTime" required>
                                 <option value="10:00">10:00</option>
                                 <option value="10:30">10:30</option>
                                 <option value="11:00">11:00</option>
@@ -99,7 +99,7 @@
                     <tr>
                         <td><label for="opGuest">No. of Guests:</label></td>
                         <td>
-                            <select id="opGuest" name="opGuest">
+                            <select id="opGuest" name="opGuest" required>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -121,8 +121,7 @@
 
                     <tr align="center">
                         <td>
-                            <input id="bSubmit" name="bSubmit" type="submit" value="Submit" onclick="clickSubmit()"
-                                style="width: 100px;">
+                            <input id="bSubmit" name="bSubmit" type="submit" value="Submit" style="width: 100px;">
                         </td>
                         <td>
                             <input id="bReset" name="bReset" type="reset" value="Cancel" name="bReset"
